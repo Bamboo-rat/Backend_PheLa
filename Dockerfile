@@ -19,7 +19,7 @@ RUN mvn clean package -DskipTests
 # ----- STAGE 2: Run với JRE 22 -----
 # Sử dụng một image JRE (Java Runtime Environment) 22 nhỏ gọn để chạy ứng dụng
 # JRE nhỏ hơn JDK, an toàn hơn cho môi trường production
-FROM openjdk:22-jre-slim
+FROM openjdk:22-jdk-slim
 
 # Tạo thư mục làm việc
 WORKDIR /app
