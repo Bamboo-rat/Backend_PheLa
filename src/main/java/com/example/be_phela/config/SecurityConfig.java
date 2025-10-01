@@ -71,6 +71,7 @@ public class SecurityConfig {
 
                     // Public endpoints - no authentication required
                     registry.requestMatchers(
+                            "/healthz",
                             "/auth/admin/register",
                             "/auth/customer/register",
                             "/auth/admin/login",
